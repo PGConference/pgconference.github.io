@@ -11,6 +11,7 @@ function App({ Component, pageProps, router }) {
   return (
     <>
       <div className={styles.header}>
+        <Diagonal className={styles.headerDiagonal} style={{ originX: 0 }} />
         <div className={styles.headerLeft}>
           <NavLink href="/" asPath="/" activeClassName={styles.active}>
             <a className={styles.headerLogo}>
