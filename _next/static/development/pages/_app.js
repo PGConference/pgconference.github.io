@@ -18738,11 +18738,21 @@ function App(_ref) {
       lineNumber: 13
     },
     __self: this
-  }, __jsx("div", {
-    className: _app_scss__WEBPACK_IMPORTED_MODULE_6___default.a.headerLeft,
+  }, __jsx(_atoms_diagonal__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    className: _app_scss__WEBPACK_IMPORTED_MODULE_6___default.a.headerDiagonal,
+    style: {
+      originX: 0
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 14
+    },
+    __self: this
+  }), __jsx("div", {
+    className: _app_scss__WEBPACK_IMPORTED_MODULE_6___default.a.headerLeft,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
     },
     __self: this
   }, __jsx(_atoms_nav_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -18751,28 +18761,28 @@ function App(_ref) {
     activeClassName: _app_scss__WEBPACK_IMPORTED_MODULE_6___default.a.active,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 16
     },
     __self: this
   }, __jsx("a", {
     className: _app_scss__WEBPACK_IMPORTED_MODULE_6___default.a.headerLogo,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 17
     },
     __self: this
   }, __jsx("img", {
     src: __webpack_require__(/*! @/assets/images/logo-white.svg */ "./assets/images/logo-white.svg"),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 18
     },
     __self: this
   })))), __jsx("div", {
     className: _app_scss__WEBPACK_IMPORTED_MODULE_6___default.a.headerRight,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 22
     },
     __self: this
   }, __jsx(_atoms_nav_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -18781,14 +18791,14 @@ function App(_ref) {
     activeClassName: _app_scss__WEBPACK_IMPORTED_MODULE_6___default.a.active,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 23
     },
     __self: this
   }, __jsx("a", {
     className: _app_scss__WEBPACK_IMPORTED_MODULE_6___default.a.headerLink,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 24
     },
     __self: this
   }, "\uC18C\uAC1C")), " ", __jsx(_atoms_nav_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -18796,14 +18806,14 @@ function App(_ref) {
     activeClassName: _app_scss__WEBPACK_IMPORTED_MODULE_6___default.a.active,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 26
     },
     __self: this
   }, __jsx("a", {
     className: _app_scss__WEBPACK_IMPORTED_MODULE_6___default.a.headerLink,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 27
     },
     __self: this
   }, "\uD504\uB85C\uADF8\uB7A8")), " ", __jsx(_atoms_nav_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -18811,42 +18821,42 @@ function App(_ref) {
     activeClassName: _app_scss__WEBPACK_IMPORTED_MODULE_6___default.a.active,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 29
     },
     __self: this
   }, __jsx("a", {
     className: _app_scss__WEBPACK_IMPORTED_MODULE_6___default.a.headerLink,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 30
     },
     __self: this
   }, "\uC624\uC2DC\uB294 \uAE38")))), __jsx("div", {
     className: _app_scss__WEBPACK_IMPORTED_MODULE_6___default.a.main,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 34
     },
     __self: this
   }, __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_4__["AnimatePresence"], {
     exitBeforeEnter: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 35
     },
     __self: this
   }, __jsx(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
     key: router.route,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 36
     },
     __self: this
   })))), __jsx("div", {
     className: _app_scss__WEBPACK_IMPORTED_MODULE_6___default.a.footer,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 39
     },
     __self: this
   }, __jsx(_atoms_diagonal__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -18854,40 +18864,40 @@ function App(_ref) {
     direction: "bottom",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 40
     },
     __self: this
   }), __jsx("div", {
     className: _app_scss__WEBPACK_IMPORTED_MODULE_6___default.a.footerBox,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 41
     },
     __self: this
   }, __jsx("div", {
     className: _app_scss__WEBPACK_IMPORTED_MODULE_6___default.a.footerLeft,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 42
     },
     __self: this
   }, __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 43
     },
     __self: this
   }, "\uBB38\uC758"), " support@test.com"), __jsx("div", {
     className: _app_scss__WEBPACK_IMPORTED_MODULE_6___default.a.footerRight,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 45
     },
     __self: this
   }, "\uBCF8 \uD589\uC0AC\uB294 ", __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 46
     },
     __self: this
   }, "\uB514\uC2DC\uC778\uC0AC\uC774\uB4DC"), " \uC758 \uACF5\uC2DD \uD6C4\uC6D0\uC744 \uBC1B\uACE0 \uC788\uC2B5\uB2C8\uB2E4."))));

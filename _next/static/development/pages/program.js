@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\location.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\program.js"],{
 
 /***/ "../node_modules/@babel/runtime-corejs2/core-js/object/assign.js":
 /*!***********************************************************************!*\
@@ -8604,21 +8604,21 @@ if (true) {
 
 /***/ }),
 
-/***/ "../node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Flocation&absolutePagePath=C%3A%5Cblueprvt%5Cdesktop%5Cpgconference.github.io%5Csrc%5Cpages%5Clocation.js!./":
-/*!****************************************************************************************************************************************************************************************************!*\
-  !*** ../node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Flocation&absolutePagePath=C%3A%5Cblueprvt%5Cdesktop%5Cpgconference.github.io%5Csrc%5Cpages%5Clocation.js ***!
-  \****************************************************************************************************************************************************************************************************/
+/***/ "../node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fprogram&absolutePagePath=C%3A%5Cblueprvt%5Cdesktop%5Cpgconference.github.io%5Csrc%5Cpages%5Cprogram.js!./":
+/*!**************************************************************************************************************************************************************************************************!*\
+  !*** ../node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fprogram&absolutePagePath=C%3A%5Cblueprvt%5Cdesktop%5Cpgconference.github.io%5Csrc%5Cpages%5Cprogram.js ***!
+  \**************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/location", function() {
-      var mod = __webpack_require__(/*! ./pages/location.js */ "./pages/location.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/program", function() {
+      var mod = __webpack_require__(/*! ./pages/program.js */ "./pages/program.js")
       if(true) {
-        module.hot.accept(/*! ./pages/location.js */ "./pages/location.js", function() {
-          if(!next.router.components["/location"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/location.js */ "./pages/location.js")
-          next.router.update("/location", updatedPage)
+        module.hot.accept(/*! ./pages/program.js */ "./pages/program.js", function() {
+          if(!next.router.components["/program"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/program.js */ "./pages/program.js")
+          next.router.update("/program", updatedPage)
         })
       }
       return mod
@@ -11443,10 +11443,10 @@ var paragraphVars = {
 
 /***/ }),
 
-/***/ "./pages/location.js":
-/*!***************************!*\
-  !*** ./pages/location.js ***!
-  \***************************/
+/***/ "./pages/program.js":
+/*!**************************!*\
+  !*** ./pages/program.js ***!
+  \**************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -11454,33 +11454,44 @@ var paragraphVars = {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _molecules_jumbotron__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/molecules/jumbotron */ "./molecules/jumbotron.js");
-/* harmony import */ var _molecules_centered_mouse__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/molecules/centered-mouse */ "./molecules/centered-mouse.js");
-var _jsxFileName = "C:\\blueprvt\\desktop\\pgconference.github.io\\src\\pages\\location.js";
+/* harmony import */ var _atoms_spacer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/atoms/spacer */ "./atoms/spacer.js");
+/* harmony import */ var _molecules_jumbotron__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/molecules/jumbotron */ "./molecules/jumbotron.js");
+/* harmony import */ var _molecules_centered_mouse__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/molecules/centered-mouse */ "./molecules/centered-mouse.js");
+/* harmony import */ var _program_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./program.scss */ "./pages/program.scss");
+/* harmony import */ var _program_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_program_scss__WEBPACK_IMPORTED_MODULE_4__);
+var _jsxFileName = "C:\\blueprvt\\desktop\\pgconference.github.io\\src\\pages\\program.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+
+
 /* harmony default export */ __webpack_exports__["default"] = (function () {
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_molecules_jumbotron__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    title: "\uC624\uC2DC\uB294 \uAE38",
-    subTitle: "LOCATION",
-    description: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "\uD589\uC0AC\uC5D0 \uC9C0\uC6D0\uD55C \uCC38\uC5EC\uC790\uB77C\uBA74 ", __jsx("br", {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_molecules_jumbotron__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: "\uD504\uB85C\uADF8\uB7A8",
+    subTitle: "PROGRAM",
+    description: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "\uAC01 \uBD84\uC57C\uC758 \uC804\uBB38\uAC00, \uD639\uC740 \uD559\uC0DD\uC774 \uBAA8\uC5EC ", __jsx("br", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 14
+        lineNumber: 17
       },
       __self: this
-    }), "\uB204\uAD6C\uB4E0 \uC790\uC720\uB85C\uC774 \uD589\uC0AC\uC7A5\uC744 \uBC29\uBB38\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."),
+    }), "\uB2E4\uC591\uD55C \uC8FC\uC81C\uC640 \uC54C\uCC2C \uB0B4\uC6A9\uC73C\uB85C", __jsx("br", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19
+      },
+      __self: this
+    }), "\uC720\uC758\uBBF8\uD55C \uD589\uC0AC\uB97C \uAD6C\uC131\uD558\uC600\uC2B5\uB2C8\uB2E4."),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 12
     },
     __self: this
-  }), __jsx(_molecules_centered_mouse__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }), __jsx(_molecules_centered_mouse__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 24
     },
     __self: this
   }));
@@ -11488,14 +11499,14 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 /***/ }),
 
-/***/ 15:
-/*!*******************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Flocation&absolutePagePath=C%3A%5Cblueprvt%5Cdesktop%5Cpgconference.github.io%5Csrc%5Cpages%5Clocation.js ***!
-  \*******************************************************************************************************************************************************/
+/***/ 11:
+/*!*****************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fprogram&absolutePagePath=C%3A%5Cblueprvt%5Cdesktop%5Cpgconference.github.io%5Csrc%5Cpages%5Cprogram.js ***!
+  \*****************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Flocation&absolutePagePath=C%3A%5Cblueprvt%5Cdesktop%5Cpgconference.github.io%5Csrc%5Cpages%5Clocation.js! */"../node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Flocation&absolutePagePath=C%3A%5Cblueprvt%5Cdesktop%5Cpgconference.github.io%5Csrc%5Cpages%5Clocation.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fprogram&absolutePagePath=C%3A%5Cblueprvt%5Cdesktop%5Cpgconference.github.io%5Csrc%5Cpages%5Cprogram.js! */"../node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fprogram&absolutePagePath=C%3A%5Cblueprvt%5Cdesktop%5Cpgconference.github.io%5Csrc%5Cpages%5Cprogram.js!./");
 
 
 /***/ }),
@@ -11511,5 +11522,5 @@ module.exports = dll_8efde919c998cf0da464;
 
 /***/ })
 
-},[[15,"static/runtime/webpack.js","styles"]]]);
-//# sourceMappingURL=location.js.map
+},[[11,"static/runtime/webpack.js","styles"]]]);
+//# sourceMappingURL=program.js.map
