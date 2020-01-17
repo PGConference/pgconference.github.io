@@ -3,6 +3,8 @@ import NavLink from "@/atoms/nav-link";
 import "normalize.css";
 import { AnimatePresence } from "framer-motion";
 
+import Diagonal from "@/atoms/diagonal";
+
 import styles from "./_app.scss";
 
 function App({ Component, pageProps, router }) {
@@ -34,6 +36,7 @@ function App({ Component, pageProps, router }) {
         </AnimatePresence>
       </div>
       <div className={styles.footer}>
+        <Diagonal className={styles.footerDiagonal} direction="bottom" />
         <div className={styles.footerBox}>
           <div className={styles.footerLeft}>
             <strong>문의</strong> support@test.com

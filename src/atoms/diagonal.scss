@@ -1,0 +1,16 @@
+.wrap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: -1px;
+  margin-bottom: -1px;
+}
+.inner {
+  position: absolute;
+  top: -3vw;
+  bottom: -3vw;
+  left: 0;
+  right: 0;
+}

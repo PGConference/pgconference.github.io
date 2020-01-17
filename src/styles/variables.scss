@@ -1,5 +1,5 @@
 $color-blue: #4a56a8;
-$color-darkblue: darken($color-blue, 23%);
+$color-darkblue: saturate(darken($color-blue, 20%), 10%);
 $color-dark: #222;
 $color-light: #eee;
 $color-mint: #6dcff6;

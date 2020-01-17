@@ -1,30 +1,11 @@
 @charset "UTF-8";
 @import "~@/styles/variables";
 
-.heroClipper {
-  overflow: hidden;
-}
 .hero {
   position: relative;
   font-family: $display-font-family;
-  background-color: $color-dark;
   color: $color-light;
   text-align: center;
-  background-image: url("../assets/images/hero-bg.jpg");
-  background-position: center center;
-  background-size: cover;
-  min-height: 100vh;
-
-  &:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba($color-darkblue, 0.8);
-    background-image: radial-gradient($color-darkblue, transparent);
-  }
 
   hr {
     margin: 0 auto;
@@ -45,12 +26,12 @@
   }
   table {
     width: 100%;
-    max-width: 30rem;
+    max-width: 30em;
     margin: 0 auto;
     border-collapse: collapse;
 
     th {
-      width: 5rem;
+      width: 5em;
     }
 
     tbody {
@@ -82,9 +63,52 @@
     }
   }
 }
+.heroDiagonal {
+  top: -3vw;
+}
 .heroBox {
   position: relative;
   margin: 0 auto;
-  padding: 6rem 1.5rem;
+  padding: 8rem 2rem;
   max-width: 60rem;
+}
+.heroBg {
+  width: 100%;
+  height: 100%;
+  background-color: $color-darkblue;
+  background-image: url("../assets/images/hero-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba($color-darkblue, 0.5);
+    background-image: radial-gradient($color-darkblue, transparent);
+  }
+}
+.introduce {
+  color: $color-dark;
+  text-align: center;
+}
+.introduceDiagonal {
+  background-color: $color-light;
+}
+.goals {
+  color: $color-light;
+  text-align: justify;
+}
+.goalsDiagonal {
+  background-color: $color-blue;
+}
+.about {
+  color: $color-light;
+  text-align: justify;
+}
+.aboutDiagonal {
+  background-color: $color-darkblue;
 }

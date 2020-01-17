@@ -1,0 +1,20 @@
+@charset "UTF-8";
+@import "~@/styles/variables";
+
+.wrap {
+  display: inline-block;
+  width: 3.5em;
+  height: 6em;
+  border-radius: 100em;
+  background-color: $color-blue;
+  padding: 1em;
+  box-shadow: 0 0.5em 1em rgba($color-darkblue, 0.66);
+}
+.wheel {
+  display: block;
+  width: 0.3em;
+  height: 1.33em;
+  background-color: $color-light;
+  border-radius: 100em;
+  margin: 0 auto;
+}

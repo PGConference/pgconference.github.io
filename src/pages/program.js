@@ -2,6 +2,7 @@ import React from "react";
 
 import Spacer from "@/atoms/spacer";
 import Jumbotron from "@/molecules/jumbotron";
+import CenteredMouse from "@/molecules/centered-mouse";
 
 import styles from "./program.scss";
 
@@ -20,6 +21,7 @@ export default () => {
           </>
         }
       />
+      <CenteredMouse />
     </>
   );
 };

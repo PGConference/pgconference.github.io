@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import Spacer from "@/atoms/spacer";
+import Diagonal from "@/atoms/diagonal";
 
 import styles from "./jumbotron.scss";
 
@@ -17,12 +18,13 @@ export default ({ title, subTitle, description }) => {
         initial: { opacity: 0 },
         animate: { opacity: 1 }
       }}
-      transition={{ staggerChildren: 0.1 }}
+      transition={{ staggerChildren: 0.1, ease: "backOut" }}
       initial="initial"
       animate="animate"
       exit="initial"
       className={styles.wrap}
     >
+      <Diagonal className={styles.diagonal} />
       <Spacer />
       <div className={styles.box}>
         <motion.h1 variants={paragraphVars}>{title}</motion.h1>

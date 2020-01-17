@@ -1,6 +1,7 @@
 import React from "react";
 
 import Jumbotron from "@/molecules/jumbotron";
+import CenteredMouse from "@/molecules/centered-mouse";
 
 export default () => {
   return (
@@ -15,6 +16,7 @@ export default () => {
           </>
         }
       />
+      <CenteredMouse />
     </>
   );
 };
