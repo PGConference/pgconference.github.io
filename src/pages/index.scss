@@ -1,0 +1,90 @@
+@charset "UTF-8";
+@import "~@/styles/variables";
+
+.heroClipper {
+  overflow: hidden;
+}
+.hero {
+  position: relative;
+  font-family: $display-font-family;
+  background-color: $color-dark;
+  color: $color-light;
+  text-align: center;
+  background-image: url("../assets/images/hero-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba($color-darkblue, 0.8);
+    background-image: radial-gradient($color-darkblue, transparent);
+  }
+
+  hr {
+    margin: 0 auto;
+    width: 3em;
+
+    border-bottom: 2px solid currentColor;
+  }
+  h1 {
+    font-size: 3em;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 2em;
+    font-weight: 400;
+  }
+  strong {
+    color: $color-mint;
+  }
+  table {
+    width: 100%;
+    max-width: 30rem;
+    margin: 0 auto;
+    border-collapse: collapse;
+
+    th {
+      width: 5rem;
+    }
+
+    tbody {
+      tr:first-child {
+        th,
+        td {
+          border-top: 3px solid $color-light;
+        }
+      }
+      tr:last-child {
+        th,
+        td {
+          border-bottom: 3px solid $color-light;
+        }
+      }
+      th,
+      td {
+        border-top: 1px solid $color-light;
+        border-bottom: 1px solid $color-light;
+        padding: 0.5rem 1rem;
+      }
+      td {
+        text-align: left;
+      }
+      * + th,
+      * + td {
+        border-left: 1px solid rgba($color-light, 0.1);
+      }
+    }
+  }
+}
+.heroBox {
+  position: relative;
+  margin: 0 auto;
+  padding: 6rem 1.5rem;
+  max-width: 60rem;
+}
