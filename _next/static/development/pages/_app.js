@@ -18881,23 +18881,29 @@ function App(_ref) {
       lineNumber: 42
     },
     __self: this
-  }, __jsx("strong", {
+  }, "\u24D2 2020 PGC", __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 44
     },
     __self: this
-  }, "\uBB38\uC758"), " support@test.com"), __jsx("div", {
-    className: _app_scss__WEBPACK_IMPORTED_MODULE_6___default.a.footerRight,
+  }), __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 45
     },
     __self: this
+  }, "\uBB38\uC758"), " pgconferencereserve@gmail.com"), __jsx("div", {
+    className: _app_scss__WEBPACK_IMPORTED_MODULE_6___default.a.footerRight,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47
+    },
+    __self: this
   }, "\uBCF8 \uD589\uC0AC\uB294 ", __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 48
     },
     __self: this
   }, "\uB514\uC2DC\uC778\uC0AC\uC774\uB4DC"), " \uC758 \uACF5\uC2DD \uD6C4\uC6D0\uC744 \uBC1B\uACE0 \uC788\uC2B5\uB2C8\uB2E4."))));

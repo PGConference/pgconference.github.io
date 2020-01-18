@@ -1830,6 +1830,74 @@ module.exports = {
 
 /***/ }),
 
+/***/ "../node_modules/core-js/internals/array-method-has-species-support.js":
+/*!*****************************************************************************!*\
+  !*** ../node_modules/core-js/internals/array-method-has-species-support.js ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var fails = __webpack_require__(/*! ../internals/fails */ "../node_modules/core-js/internals/fails.js");
+var wellKnownSymbol = __webpack_require__(/*! ../internals/well-known-symbol */ "../node_modules/core-js/internals/well-known-symbol.js");
+var V8_VERSION = __webpack_require__(/*! ../internals/engine-v8-version */ "../node_modules/core-js/internals/engine-v8-version.js");
+
+var SPECIES = wellKnownSymbol('species');
+
+module.exports = function (METHOD_NAME) {
+  // We can't use this feature detection in V8 since it causes
+  // deoptimization and serious performance degradation
+  // https://github.com/zloirock/core-js/issues/677
+  return V8_VERSION >= 51 || !fails(function () {
+    var array = [];
+    var constructor = array.constructor = {};
+    constructor[SPECIES] = function () {
+      return { foo: 1 };
+    };
+    return array[METHOD_NAME](Boolean).foo !== 1;
+  });
+};
+
+
+/***/ }),
+
+/***/ "../node_modules/core-js/internals/array-method-uses-to-length.js":
+/*!************************************************************************!*\
+  !*** ../node_modules/core-js/internals/array-method-uses-to-length.js ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var DESCRIPTORS = __webpack_require__(/*! ../internals/descriptors */ "../node_modules/core-js/internals/descriptors.js");
+var fails = __webpack_require__(/*! ../internals/fails */ "../node_modules/core-js/internals/fails.js");
+var has = __webpack_require__(/*! ../internals/has */ "../node_modules/core-js/internals/has.js");
+
+var defineProperty = Object.defineProperty;
+var cache = {};
+
+var thrower = function (it) { throw it; };
+
+module.exports = function (METHOD_NAME, options) {
+  if (has(cache, METHOD_NAME)) return cache[METHOD_NAME];
+  if (!options) options = {};
+  var method = [][METHOD_NAME];
+  var ACCESSORS = has(options, 'ACCESSORS') ? options.ACCESSORS : false;
+  var argument0 = has(options, 0) ? options[0] : thrower;
+  var argument1 = has(options, 1) ? options[1] : undefined;
+
+  return cache[METHOD_NAME] = !!method && !fails(function () {
+    if (ACCESSORS && !DESCRIPTORS) return true;
+    var O = { length: -1 };
+
+    if (ACCESSORS) defineProperty(O, 1, { enumerable: true, get: thrower });
+    else O[1] = 1;
+
+    method.call(O, argument0, argument1);
+  });
+};
+
+
+/***/ }),
+
 /***/ "../node_modules/core-js/internals/array-species-create.js":
 /*!*****************************************************************!*\
   !*** ../node_modules/core-js/internals/array-species-create.js ***!
@@ -1998,6 +2066,51 @@ var EXISTS = isObject(document) && isObject(document.createElement);
 module.exports = function (it) {
   return EXISTS ? document.createElement(it) : {};
 };
+
+
+/***/ }),
+
+/***/ "../node_modules/core-js/internals/engine-user-agent.js":
+/*!**************************************************************!*\
+  !*** ../node_modules/core-js/internals/engine-user-agent.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var getBuiltIn = __webpack_require__(/*! ../internals/get-built-in */ "../node_modules/core-js/internals/get-built-in.js");
+
+module.exports = getBuiltIn('navigator', 'userAgent') || '';
+
+
+/***/ }),
+
+/***/ "../node_modules/core-js/internals/engine-v8-version.js":
+/*!**************************************************************!*\
+  !*** ../node_modules/core-js/internals/engine-v8-version.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var global = __webpack_require__(/*! ../internals/global */ "../node_modules/core-js/internals/global.js");
+var userAgent = __webpack_require__(/*! ../internals/engine-user-agent */ "../node_modules/core-js/internals/engine-user-agent.js");
+
+var process = global.process;
+var versions = process && process.versions;
+var v8 = versions && versions.v8;
+var match, version;
+
+if (v8) {
+  match = v8.split('.');
+  version = match[0] + match[1];
+} else if (userAgent) {
+  match = userAgent.match(/Edge\/(\d+)/);
+  if (!match || match[1] >= 74) {
+    match = userAgent.match(/Chrome\/(\d+)/);
+    if (match) version = match[1];
+  }
+}
+
+module.exports = version && +version;
 
 
 /***/ }),
@@ -3192,6 +3305,36 @@ module.exports = function (name) {
     else WellKnownSymbolsStore[name] = createWellKnownSymbol('Symbol.' + name);
   } return WellKnownSymbolsStore[name];
 };
+
+
+/***/ }),
+
+/***/ "../node_modules/core-js/modules/es.array.map.js":
+/*!*******************************************************!*\
+  !*** ../node_modules/core-js/modules/es.array.map.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var $ = __webpack_require__(/*! ../internals/export */ "../node_modules/core-js/internals/export.js");
+var $map = __webpack_require__(/*! ../internals/array-iteration */ "../node_modules/core-js/internals/array-iteration.js").map;
+var arrayMethodHasSpeciesSupport = __webpack_require__(/*! ../internals/array-method-has-species-support */ "../node_modules/core-js/internals/array-method-has-species-support.js");
+var arrayMethodUsesToLength = __webpack_require__(/*! ../internals/array-method-uses-to-length */ "../node_modules/core-js/internals/array-method-uses-to-length.js");
+
+var HAS_SPECIES_SUPPORT = arrayMethodHasSpeciesSupport('map');
+// FF49- issue
+var USES_TO_LENGTH = arrayMethodUsesToLength('map');
+
+// `Array.prototype.map` method
+// https://tc39.github.io/ecma262/#sec-array.prototype.map
+// with adding support of @@species
+$({ target: 'Array', proto: true, forced: !HAS_SPECIES_SUPPORT || !USES_TO_LENGTH }, {
+  map: function map(callbackfn /* , thisArg */) {
+    return $map(this, callbackfn, arguments.length > 1 ? arguments[1] : undefined);
+  }
+});
 
 
 /***/ }),
@@ -11121,6 +11264,17 @@ module.exports = g;
 
 /***/ }),
 
+/***/ "./assets/images/map.jpg":
+/*!*******************************!*\
+  !*** ./assets/images/map.jpg ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/map-990f241106a9fbf53600b46bf2901f4c.jpg";
+
+/***/ }),
+
 /***/ "./atoms/diagonal.js":
 /*!***************************!*\
   !*** ./atoms/diagonal.js ***!
@@ -11342,14 +11496,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! framer-motion */ "../node_modules/framer-motion/dist/framer-motion.es.js");
-/* harmony import */ var _atoms_spacer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/atoms/spacer */ "./atoms/spacer.js");
-/* harmony import */ var _atoms_diagonal__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/atoms/diagonal */ "./atoms/diagonal.js");
-/* harmony import */ var _jumbotron_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./jumbotron.scss */ "./molecules/jumbotron.scss");
-/* harmony import */ var _jumbotron_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_jumbotron_scss__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! classnames */ "../node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _atoms_spacer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/atoms/spacer */ "./atoms/spacer.js");
+/* harmony import */ var _atoms_diagonal__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/atoms/diagonal */ "./atoms/diagonal.js");
+/* harmony import */ var _jumbotron_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./jumbotron.scss */ "./molecules/jumbotron.scss");
+/* harmony import */ var _jumbotron_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_jumbotron_scss__WEBPACK_IMPORTED_MODULE_7__);
 
 
 var _jsxFileName = "C:\\blueprvt\\desktop\\pgconference.github.io\\src\\molecules\\jumbotron.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
+
 
 
 
@@ -11374,7 +11531,8 @@ var paragraphVars = {
 /* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
   var title = _ref.title,
       subTitle = _ref.subTitle,
-      description = _ref.description;
+      description = _ref.description,
+      bgClassName = _ref.bgClassName;
   return __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_3__["motion"].div, {
     variants: {
       initial: {
@@ -11391,51 +11549,58 @@ var paragraphVars = {
     initial: "initial",
     animate: "animate",
     exit: "initial",
-    className: _jumbotron_scss__WEBPACK_IMPORTED_MODULE_6___default.a.wrap,
+    className: _jumbotron_scss__WEBPACK_IMPORTED_MODULE_7___default.a.wrap,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 17
     },
     __self: this
-  }, __jsx(_atoms_diagonal__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    className: _jumbotron_scss__WEBPACK_IMPORTED_MODULE_6___default.a.diagonal,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27
-    },
-    __self: this
-  }), __jsx(_atoms_spacer__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, __jsx(_atoms_diagonal__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    className: _jumbotron_scss__WEBPACK_IMPORTED_MODULE_7___default.a.diagonal,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 28
     },
     __self: this
-  }), __jsx("div", {
-    className: _jumbotron_scss__WEBPACK_IMPORTED_MODULE_6___default.a.box,
+  }, __jsx("div", {
+    className: classnames__WEBPACK_IMPORTED_MODULE_4___default()(_jumbotron_scss__WEBPACK_IMPORTED_MODULE_7___default.a.bg, bgClassName),
     __source: {
       fileName: _jsxFileName,
       lineNumber: 29
+    },
+    __self: this
+  })), __jsx(_atoms_spacer__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: this
+  }), __jsx("div", {
+    className: _jumbotron_scss__WEBPACK_IMPORTED_MODULE_7___default.a.box,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
     },
     __self: this
   }, __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_3__["motion"].h1, {
     variants: paragraphVars,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 33
     },
     __self: this
   }, title), __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_3__["motion"].h2, {
     variants: paragraphVars,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 34
     },
     __self: this
   }, subTitle), __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_3__["motion"].p, {
     variants: paragraphVars,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 35
     },
     __self: this
   }, description)));
@@ -11452,43 +11617,140 @@ var paragraphVars = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _molecules_jumbotron__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/molecules/jumbotron */ "./molecules/jumbotron.js");
-/* harmony import */ var _molecules_centered_mouse__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/molecules/centered-mouse */ "./molecules/centered-mouse.js");
+/* harmony import */ var core_js_modules_es_array_map__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.map */ "../node_modules/core-js/modules/es.array.map.js");
+/* harmony import */ var core_js_modules_es_array_map__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_map__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "../node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _styles_common_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/styles/common.scss */ "./styles/common.scss");
+/* harmony import */ var _styles_common_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_common_scss__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _molecules_jumbotron__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/molecules/jumbotron */ "./molecules/jumbotron.js");
+/* harmony import */ var _molecules_centered_mouse__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/molecules/centered-mouse */ "./molecules/centered-mouse.js");
+/* harmony import */ var _location_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./location.scss */ "./pages/location.scss");
+/* harmony import */ var _location_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_location_scss__WEBPACK_IMPORTED_MODULE_6__);
+
 var _jsxFileName = "C:\\blueprvt\\desktop\\pgconference.github.io\\src\\pages\\location.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+
+
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_molecules_jumbotron__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(_molecules_jumbotron__WEBPACK_IMPORTED_MODULE_4__["default"], {
     title: "\uC624\uC2DC\uB294 \uAE38",
     subTitle: "LOCATION",
-    description: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "\uD589\uC0AC\uC5D0 \uC9C0\uC6D0\uD55C \uCC38\uC5EC\uC790\uB77C\uBA74 ", __jsx("br", {
+    bgClassName: _location_scss__WEBPACK_IMPORTED_MODULE_6___default.a.jumbotronBg,
+    description: __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, "\uD589\uC0AC\uC5D0 \uC9C0\uC6D0\uD55C \uCC38\uC5EC\uC790\uB77C\uBA74 ", __jsx("br", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 14
+        lineNumber: 19
       },
       __self: this
     }), "\uB204\uAD6C\uB4E0 \uC790\uC720\uB85C\uC774 \uD589\uC0AC\uC7A5\uC744 \uBC29\uBB38\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 13
     },
     __self: this
-  }), __jsx(_molecules_centered_mouse__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }), __jsx(_molecules_centered_mouse__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 24
     },
     __self: this
-  }));
+  }), __jsx("div", {
+    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(_styles_common_scss__WEBPACK_IMPORTED_MODULE_3___default.a.section),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }, __jsx("div", {
+    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(_styles_common_scss__WEBPACK_IMPORTED_MODULE_3___default.a.sectionBox),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  }, __jsx("table", {
+    className: _styles_common_scss__WEBPACK_IMPORTED_MODULE_3___default.a.table,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: this
+  }, __jsx("tbody", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: this
+  }, __jsx("tr", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }, __jsx("th", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: this
+  }, "\uC77C\uC2DC"), __jsx("td", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: this
+  }, "2019-02-15 \uC624\uD6C4 2:30")), __jsx("tr", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33
+    },
+    __self: this
+  }, __jsx("th", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34
+    },
+    __self: this
+  }, "\uC7A5\uC18C"), __jsx("td", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35
+    },
+    __self: this
+  }, "\uC11C\uC6B8\uD2B9\uBCC4\uC2DC \uAC15\uB0A8\uAD6C \uC5ED\uC0BC\uB3D9 662-14 \uC5D0\uC774\uBE44\uD2F0\uD0C0\uC6CC")))), __jsx("div", {
+    className: _location_scss__WEBPACK_IMPORTED_MODULE_6___default.a.map,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: this
+  }, __jsx("img", {
+    src: __webpack_require__(/*! @/assets/images/map.jpg */ "./assets/images/map.jpg"),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40
+    },
+    __self: this
+  }), __jsx("div", {
+    className: _location_scss__WEBPACK_IMPORTED_MODULE_6___default.a.mapDescription,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41
+    },
+    __self: this
+  }, "\uC704 \uC774\uBBF8\uC9C0\uB294 \uAD6C\uAE00 API\uAC00 \uC900\uBE44\uB418\uAE30 \uC804\uAE4C\uC9C0 \uC784\uC2DC\uB85C \uC9C0\uC815\uD55C \uC774\uBBF8\uC9C0\uC785\uB2C8\uB2E4.")))));
 });
 
 /***/ }),
 
-/***/ 15:
+/***/ 5:
 /*!*******************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Flocation&absolutePagePath=C%3A%5Cblueprvt%5Cdesktop%5Cpgconference.github.io%5Csrc%5Cpages%5Clocation.js ***!
   \*******************************************************************************************************************************************************/
@@ -11511,5 +11773,5 @@ module.exports = dll_8efde919c998cf0da464;
 
 /***/ })
 
-},[[15,"static/runtime/webpack.js","styles"]]]);
+},[[5,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=location.js.map
