@@ -19680,14 +19680,18 @@ function App(_ref) {
     title: "PGC 2020",
     description: "\uB204\uAD6C\uB098 \uBC1C\uD45C\uD558\uACE0 \uCC38\uAD00\uD560 \uC218 \uC788\uB294 \uC790\uC720\uB85C\uC6B4 \uAC1C\uBC1C \uCEE8\uD37C\uB7F0\uC2A4 - PGC 2020",
     openGraph: {
+      type: "website",
       title: "프로그래밍 갤러리 컨퍼런스 2020",
       description: "누구나 발표하고 참관할 수 있는 자유로운 개발 컨퍼런스 - PGC 2020",
       images: [{
-        url: "https://pgconference.github.com" + __webpack_require__(/*! @/assets/images/og.jpg */ "./assets/images/og.jpg"),
+        url: "https://pgconference.github.io" + __webpack_require__(/*! @/assets/images/og.jpg */ "./assets/images/og.jpg"),
         width: 800,
         height: 600
       }],
       site_name: "PGConference"
+    },
+    twitter: {
+      cardType: "summary_large_image"
     },
     __source: {
       fileName: _jsxFileName,
@@ -19698,7 +19702,7 @@ function App(_ref) {
     className: _app_scss__WEBPACK_IMPORTED_MODULE_7___default.a.header,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 35
     },
     __self: this
   }, __jsx(_atoms_diagonal__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -19708,14 +19712,14 @@ function App(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 36
     },
     __self: this
   }), __jsx("div", {
     className: _app_scss__WEBPACK_IMPORTED_MODULE_7___default.a.headerLeft,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 37
     },
     __self: this
   }, __jsx(_atoms_nav_link__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -19724,28 +19728,28 @@ function App(_ref) {
     activeClassName: _app_scss__WEBPACK_IMPORTED_MODULE_7___default.a.active,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 38
     },
     __self: this
   }, __jsx("a", {
     className: _app_scss__WEBPACK_IMPORTED_MODULE_7___default.a.headerLogo,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 39
     },
     __self: this
   }, __jsx("img", {
     src: __webpack_require__(/*! @/assets/images/logo-white.svg */ "./assets/images/logo-white.svg"),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 40
     },
     __self: this
   })))), __jsx("div", {
     className: _app_scss__WEBPACK_IMPORTED_MODULE_7___default.a.headerRight,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 44
     },
     __self: this
   }, __jsx(_atoms_nav_link__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -19754,14 +19758,14 @@ function App(_ref) {
     activeClassName: _app_scss__WEBPACK_IMPORTED_MODULE_7___default.a.active,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 45
     },
     __self: this
   }, __jsx("a", {
     className: _app_scss__WEBPACK_IMPORTED_MODULE_7___default.a.headerLink,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 46
     },
     __self: this
   }, "\uC18C\uAC1C")), " ", __jsx(_atoms_nav_link__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -19769,14 +19773,14 @@ function App(_ref) {
     activeClassName: _app_scss__WEBPACK_IMPORTED_MODULE_7___default.a.active,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 48
     },
     __self: this
   }, __jsx("a", {
     className: _app_scss__WEBPACK_IMPORTED_MODULE_7___default.a.headerLink,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 49
     },
     __self: this
   }, "\uD504\uB85C\uADF8\uB7A8")), " ", __jsx(_atoms_nav_link__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -19784,42 +19788,42 @@ function App(_ref) {
     activeClassName: _app_scss__WEBPACK_IMPORTED_MODULE_7___default.a.active,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 51
     },
     __self: this
   }, __jsx("a", {
     className: _app_scss__WEBPACK_IMPORTED_MODULE_7___default.a.headerLink,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 52
     },
     __self: this
   }, "\uC624\uC2DC\uB294 \uAE38")))), __jsx("div", {
     className: _app_scss__WEBPACK_IMPORTED_MODULE_7___default.a.main,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 56
     },
     __self: this
   }, __jsx(framer_motion__WEBPACK_IMPORTED_MODULE_5__["AnimatePresence"], {
     exitBeforeEnter: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 57
     },
     __self: this
   }, __jsx(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
     key: router.route,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 58
     },
     __self: this
   })))), __jsx("div", {
     className: _app_scss__WEBPACK_IMPORTED_MODULE_7___default.a.footer,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 61
     },
     __self: this
   }, __jsx(_atoms_diagonal__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -19827,46 +19831,46 @@ function App(_ref) {
     direction: "bottom",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 62
     },
     __self: this
   }), __jsx("div", {
     className: _app_scss__WEBPACK_IMPORTED_MODULE_7___default.a.footerBox,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 63
     },
     __self: this
   }, __jsx("div", {
     className: _app_scss__WEBPACK_IMPORTED_MODULE_7___default.a.footerLeft,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 64
     },
     __self: this
   }, "\u24D2 2020 PGC", __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 66
     },
     __self: this
   }), __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 67
     },
     __self: this
   }, "\uBB38\uC758"), " pgconferencereserve@gmail.com"), __jsx("div", {
     className: _app_scss__WEBPACK_IMPORTED_MODULE_7___default.a.footerRight,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 69
     },
     __self: this
   }, "\uBCF8 \uD589\uC0AC\uB294 ", __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 70
     },
     __self: this
   }, "\uB514\uC2DC\uC778\uC0AC\uC774\uB4DC"), " \uC758 \uACF5\uC2DD \uD6C4\uC6D0\uC744 \uBC1B\uACE0 \uC788\uC2B5\uB2C8\uB2E4."))));
