@@ -1,0 +1,23 @@
+.jumbotronBg {
+  background-image: url("@/assets/images/location-bg.jpeg");
+  background-size: cover;
+  opacity: 0.33;
+}
+.map {
+  margin: 0 auto;
+  max-width: 60rem;
+  margin-top: 2rem;
+
+  background-color: #333;
+  box-shadow: 0 0.66em 1em -0.33em rgba(black, 0.66);
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+.mapDescription {
+  padding: 2rem;
+  text-align: center;
+  opacity: 0.66;
+}

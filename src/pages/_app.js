@@ -40,7 +40,9 @@ function App({ Component, pageProps, router }) {
         <Diagonal className={styles.footerDiagonal} direction="bottom" />
         <div className={styles.footerBox}>
           <div className={styles.footerLeft}>
-            <strong>문의</strong> support@test.com
+            ⓒ 2020 PGC
+            <br />
+            <strong>문의</strong> pgconferencereserve@gmail.com
           </div>
           <div className={styles.footerRight}>
             본 행사는 <strong>디시인사이드</strong> 의 공식 후원을 받고

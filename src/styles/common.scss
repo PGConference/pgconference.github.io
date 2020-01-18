@@ -22,3 +22,42 @@
     background-color: currentColor;
   }
 }
+
+.table {
+  width: 100%;
+  max-width: 30em;
+  margin: 0 auto;
+  border-collapse: collapse;
+
+  th {
+    width: 5em;
+  }
+
+  tbody {
+    tr:first-child {
+      th,
+      td {
+        border-top: 3px solid $color-light;
+      }
+    }
+    tr:last-child {
+      th,
+      td {
+        border-bottom: 3px solid $color-light;
+      }
+    }
+    th,
+    td {
+      border-top: 1px solid $color-light;
+      border-bottom: 1px solid $color-light;
+      padding: 0.5rem 1rem;
+    }
+    td {
+      text-align: left;
+    }
+    * + th,
+    * + td {
+      border-left: 1px solid rgba($color-light, 0.1);
+    }
+  }
+}

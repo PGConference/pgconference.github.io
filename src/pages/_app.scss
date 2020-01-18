@@ -110,18 +110,18 @@ body {
   max-width: 60rem;
   padding: 6rem 2rem;
 
-  @media screen and (max-width: 40rem) {
+  @media screen and (max-width: 50rem) {
     text-align: center;
   }
 }
 
 .footerLeft {
-  @media screen and (min-width: 40rem) {
+  @media screen and (min-width: 50rem) {
     float: left;
   }
 }
 .footerRight {
-  @media screen and (min-width: 40rem) {
+  @media screen and (min-width: 50rem) {
     float: right;
   }
 }

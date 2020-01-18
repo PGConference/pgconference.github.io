@@ -1,0 +1,58 @@
+@charset "UTF-8";
+@import "~@/styles/variables";
+
+.jumbotronBg {
+  background-image: url("@/assets/images/program-bg.jpg");
+  background-size: cover;
+  opacity: 0.33;
+}
+
+.itemsBox {
+  padding: 6rem 2rem;
+}
+.item {
+  position: relative;
+  text-align: justify;
+
+  transition: color 0.15s ease;
+  color: $color-light;
+
+  h1 {
+    color: $color-mint;
+  }
+  h2 {
+    font-weight: 400;
+
+    strong {
+      color: $color-mint;
+    }
+  }
+  hr {
+    display: inline-block;
+    width: 3rem;
+    border: 0;
+    height: 0.1rem;
+    background-color: $color-light;
+  }
+  &:nth-child(2n + 1) {
+    .itemDiagonal {
+      background-color: $color-blue;
+    }
+  }
+  &:nth-child(2n) {
+    .itemDiagonal {
+      background-color: darken($color-blue, 10%);
+    }
+  }
+}
+.itemDiagonal {
+  transition: background-color 0.15s ease;
+  box-shadow: 0 0.3em 0.6em -0.2em rgba($color-darkblue, 0.5);
+}
+.itemContent {
+  position: relative;
+  padding: 3rem 2rem;
+}
+.item + .item {
+  margin-top: 1rem;
+}

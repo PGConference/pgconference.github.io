@@ -24,44 +24,6 @@
   strong {
     color: $color-mint;
   }
-  table {
-    width: 100%;
-    max-width: 30em;
-    margin: 0 auto;
-    border-collapse: collapse;
-
-    th {
-      width: 5em;
-    }
-
-    tbody {
-      tr:first-child {
-        th,
-        td {
-          border-top: 3px solid $color-light;
-        }
-      }
-      tr:last-child {
-        th,
-        td {
-          border-bottom: 3px solid $color-light;
-        }
-      }
-      th,
-      td {
-        border-top: 1px solid $color-light;
-        border-bottom: 1px solid $color-light;
-        padding: 0.5rem 1rem;
-      }
-      td {
-        text-align: left;
-      }
-      * + th,
-      * + td {
-        border-left: 1px solid rgba($color-light, 0.1);
-      }
-    }
-  }
 }
 .heroDiagonal {
   top: -3vw;
@@ -76,7 +38,7 @@
   width: 100%;
   height: 100%;
   background-color: $color-darkblue;
-  background-image: url("../assets/images/hero-bg.jpg");
+  background-image: url("@/assets/images/hero-bg.jpg");
   background-position: center center;
   background-size: cover;
 
@@ -93,7 +55,8 @@
 }
 .introduce {
   color: $color-dark;
-  text-align: center;
+  text-align: justify;
+  text-align-last: center;
 }
 .introduceDiagonal {
   background-color: $color-light;

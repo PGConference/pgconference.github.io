@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import cx from "classnames";
 
 import Spacer from "@/atoms/spacer";
 import Diagonal from "@/atoms/diagonal";
@@ -11,7 +12,7 @@ const paragraphVars = {
   animate: { x: 0, opacity: 1, transition: { ease: "circOut" } }
 };
 
-export default ({ title, subTitle, description }) => {
+export default ({ title, subTitle, description, bgClassName }) => {
   return (
     <motion.div
       variants={{
@@ -24,7 +25,9 @@ export default ({ title, subTitle, description }) => {
       exit="initial"
       className={styles.wrap}
     >
-      <Diagonal className={styles.diagonal} />
+      <Diagonal className={styles.diagonal}>
+        <div className={cx(styles.bg, bgClassName)} />
+      </Diagonal>
       <Spacer />
       <div className={styles.box}>
         <motion.h1 variants={paragraphVars}>{title}</motion.h1>
