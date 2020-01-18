@@ -32,7 +32,14 @@ export default () => {
               </tr>
               <tr>
                 <th>장소</th>
-                <td>서울특별시 강남구 역삼동 662-14 에이비티타워</td>
+                <td>
+                  서울특별시 강남구 역삼동 662-14 에이비티타워( 상세 정보
+                  추가예정 )
+                </td>
+              </tr>
+              <tr>
+                <th>문의</th>
+                <td>pgconferencereserve@gmail.com</td>
               </tr>
             </tbody>
           </table>

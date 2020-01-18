@@ -1,0 +1,6 @@
+- [X] List margin ( by adding <p> tags )
+- [X] Check index page first section alignment
+- [X] SEO meta tags, OG Tags
+- [ ] Google Site Registration
+- [ ] Google Map API
+- [ ] 주소에 층 추가

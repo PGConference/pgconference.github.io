@@ -18,21 +18,28 @@
   color: $color-light;
 
   h1 {
-    color: $color-mint;
+    font-family: $display-font-family;
   }
   h2 {
     font-weight: 400;
+    font-size: 1.33em;
+
+    font-family: $display-font-family;
 
     strong {
       color: $color-mint;
     }
   }
+  p {
+    opacity: 0.75;
+  }
   hr {
     display: inline-block;
     width: 3rem;
     border: 0;
-    height: 0.1rem;
-    background-color: $color-light;
+
+    border: 0;
+    border-bottom: 0.2rem solid currentColor;
   }
   &:nth-child(2n + 1) {
     .itemDiagonal {

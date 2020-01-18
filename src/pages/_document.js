@@ -3,7 +3,7 @@ import NextDocument, { Html, Head, Main, NextScript } from "next/document";
 class Document extends NextDocument {
   render() {
     return (
-      <Html>
+      <Html lang="kr">
         <Head>
           <link
             href="https://fonts.googleapis.com/css?family=Gothic+A1|Montserrat:400,700&display=swap"

@@ -18,8 +18,9 @@
   hr {
     display: inline-block;
     width: 4rem;
-    height: 0.2rem;
-    background-color: currentColor;
+
+    border: 0;
+    border-bottom: 0.2rem solid currentColor;
   }
 }
 

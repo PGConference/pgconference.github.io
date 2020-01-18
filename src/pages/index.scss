@@ -11,6 +11,7 @@
     margin: 0 auto;
     width: 3em;
 
+    border: 0;
     border-bottom: 2px solid currentColor;
   }
   h1 {
@@ -55,8 +56,11 @@
 }
 .introduce {
   color: $color-dark;
-  text-align: justify;
-  text-align-last: center;
+  text-align: center;
+
+  strong {
+    color: $color-blue;
+  }
 }
 .introduceDiagonal {
   background-color: $color-light;
@@ -64,6 +68,10 @@
 .goals {
   color: $color-light;
   text-align: justify;
+
+  strong {
+    color: $color-mint;
+  }
 }
 .goalsDiagonal {
   background-color: $color-blue;
@@ -71,6 +79,10 @@
 .about {
   color: $color-light;
   text-align: justify;
+
+  strong {
+    color: $color-mint;
+  }
 }
 .aboutDiagonal {
   background-color: $color-darkblue;
