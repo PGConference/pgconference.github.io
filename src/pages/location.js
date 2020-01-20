@@ -1,11 +1,39 @@
 import React from "react";
 import cx from "classnames";
+import {
+  GoogleMap,
+  Marker,
+  withGoogleMap,
+  withScriptjs
+} from "react-google-maps";
 
 import commonCss from "@/styles/common.scss";
 import Jumbotron from "@/molecules/jumbotron";
+import Diagonal from "@/atoms/Diagonal";
 import CenteredMouse from "@/molecules/centered-mouse";
 
 import styles from "./location.scss";
+
+const PlaceMap = withScriptjs(
+  withGoogleMap(() => {
+    return (
+      <GoogleMap
+        defaultZoom={18}
+        defaultCenter={{ lat: 37.505904, lng: 127.040694 }}
+      >
+        <Marker position={{ lat: 37.505904, lng: 127.040694 }} />
+      </GoogleMap>
+    );
+  })
+);
+
+PlaceMap.defaultProps = {
+  googleMapURL:
+    "https://maps.googleapis.com/maps/api/js?key=AIzaSyAoG06rKP4D5jeuQC50WM3VaSGi8YLx9fE&callback=initMap",
+  loadingElement: <div />,
+  containerElement: <div className={styles.placeMapContainer} />,
+  mapElement: <div className={styles.placeMap} />
+};
 
 export default () => {
   return (
@@ -23,6 +51,9 @@ export default () => {
       />
       <CenteredMouse />
       <div className={cx(commonCss.section)}>
+        <Diagonal className={styles.mainDiagonal}>
+          <div className={styles.mainBg} />
+        </Diagonal>
         <div className={cx(commonCss.sectionBox)}>
           <table className={commonCss.table}>
             <tbody>
@@ -33,8 +64,8 @@ export default () => {
               <tr>
                 <th>장소</th>
                 <td>
-                  서울특별시 강남구 역삼동 662-14 에이비티타워( 상세 정보
-                  추가예정 )
+                  서울특별시 강남구 역삼동 662-14 에이비티타워 2F{" "}
+                  <strong>코스토리 스페이스 세미나실</strong>
                 </td>
               </tr>
               <tr>
@@ -44,10 +75,7 @@ export default () => {
             </tbody>
           </table>
           <div className={styles.map}>
-            <img src={require("@/assets/images/map.jpg")} />
-            <div className={styles.mapDescription}>
-              위 이미지는 구글 API가 준비되기 전까지 임시로 지정한 이미지입니다.
-            </div>
+            <PlaceMap />
           </div>
         </div>
       </div>

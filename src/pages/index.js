@@ -48,6 +48,9 @@ export default () => {
           <h3>
             프로그래밍 갤러리 컨퍼런스 <strong>2020</strong>
           </h3>
+          <p>
+            <a className={styles.registerButton}>지금 참가신청하기</a>
+          </p>
           <table className={commonCss.table}>
             <tbody>
               <tr>
@@ -57,8 +60,8 @@ export default () => {
               <tr>
                 <th>장소</th>
                 <td>
-                  서울특별시 강남구 역삼동 662-14 에이비티타워 ( 상세 정보
-                  추가예정 )
+                  서울특별시 강남구 역삼동 662-14 에이비티타워 2F{" "}
+                  <strong>코스토리 스페이스 세미나실</strong>
                 </td>
               </tr>
               <tr>

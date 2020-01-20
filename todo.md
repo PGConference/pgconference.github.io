@@ -3,5 +3,6 @@
 - [x] SEO meta tags, OG Tags
 - [x] Google Search Registration
 - [x] Google Analytics & Google Tag Manager
-- [ ] Google Map API
-- [ ] 주소에 층 정보 추가
+- [x] Google Map API
+- [x] 상세 주소 정보 추가
+- [ ] 메인에 참여 버튼 추가 ( 링크 걸어야 함 )
