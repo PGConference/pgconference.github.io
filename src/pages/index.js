@@ -49,7 +49,12 @@ export default () => {
             프로그래밍 갤러리 컨퍼런스 <strong>2020</strong>
           </h3>
           <p>
-            <a className={styles.registerButton}>지금 참가신청하기</a>
+            <a
+              className={styles.registerButton}
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdTvGVS2VVbPTfAheVwpwwrVSllJt2f4oQPTwMlrSeoTdi32w/viewform?usp=sf_link"
+            >
+              지금 참가신청하기
+            </a>
           </p>
           <table className={commonCss.table}>
             <tbody>
