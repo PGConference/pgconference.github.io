@@ -35,7 +35,7 @@ export default () => {
               <div className={cx(styles.itemContent)}>
                 <h1>{programItem.title}</h1>
                 <h2>
-                  강사 : <strong>{programItem.author}</strong>
+                  SPEAKER　<strong>{programItem.author}</strong>
                 </h2>
                 <hr />
                 <p>{programItem.description}</p>
