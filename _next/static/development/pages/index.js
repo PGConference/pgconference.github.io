@@ -6700,10 +6700,10 @@ if (true) {
 
 /***/ }),
 
-/***/ "../node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5Cblueprvt%5Cdesktop%5Cpgconference.github.io%5Csrc%5Cpages%5Cindex.js!./":
-/*!*****************************************************************************************************************************************************************************************!*\
-  !*** ../node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5Cblueprvt%5Cdesktop%5Cpgconference.github.io%5Csrc%5Cpages%5Cindex.js ***!
-  \*****************************************************************************************************************************************************************************************/
+/***/ "../node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CWORKTOGETHER%5Cyee%5Cyho%5Cpgconference.github.io%5Csrc%5Cpages%5Cindex.js!./":
+/*!***********************************************************************************************************************************************************************************************!*\
+  !*** ../node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CWORKTOGETHER%5Cyee%5Cyho%5Cpgconference.github.io%5Csrc%5Cpages%5Cindex.js ***!
+  \***********************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9206,7 +9206,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _diagonal_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_diagonal_scss__WEBPACK_IMPORTED_MODULE_5__);
 
 
-var _jsxFileName = "C:\\blueprvt\\desktop\\pgconference.github.io\\src\\atoms\\Diagonal.js";
+var _jsxFileName = "C:\\WORKTOGETHER\\yee\\yho\\pgconference.github.io\\src\\atoms\\Diagonal.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 
@@ -9267,7 +9267,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! framer-motion */ "../node_modules/framer-motion/dist/framer-motion.es.js");
 /* harmony import */ var _mouse_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./mouse.scss */ "./atoms/mouse.scss");
 /* harmony import */ var _mouse_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_mouse_scss__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "C:\\blueprvt\\desktop\\pgconference.github.io\\src\\atoms\\mouse.js";
+var _jsxFileName = "C:\\WORKTOGETHER\\yee\\yho\\pgconference.github.io\\src\\atoms\\mouse.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -9330,7 +9330,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _centered_mouse_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./centered-mouse.scss */ "./molecules/centered-mouse.scss");
 /* harmony import */ var _centered_mouse_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_centered_mouse_scss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _atoms_mouse__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/atoms/mouse */ "./atoms/mouse.js");
-var _jsxFileName = "C:\\blueprvt\\desktop\\pgconference.github.io\\src\\molecules\\centered-mouse.js";
+var _jsxFileName = "C:\\WORKTOGETHER\\yee\\yho\\pgconference.github.io\\src\\molecules\\centered-mouse.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -9383,7 +9383,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _molecules_centered_mouse__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/molecules/centered-mouse */ "./molecules/centered-mouse.js");
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./index.scss */ "./pages/index.scss");
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_7__);
-var _jsxFileName = "C:\\blueprvt\\desktop\\pgconference.github.io\\src\\pages\\index.js";
+var _jsxFileName = "C:\\WORKTOGETHER\\yee\\yho\\pgconference.github.io\\src\\pages\\index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -9534,6 +9534,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: this
   }, __jsx("a", {
     className: _index_scss__WEBPACK_IMPORTED_MODULE_7___default.a.registerButton,
+    href: "https://docs.google.com/forms/d/e/1FAIpQLSdTvGVS2VVbPTfAheVwpwwrVSllJt2f4oQPTwMlrSeoTdi32w/viewform?usp=sf_link",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 52
@@ -9543,382 +9544,382 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     className: _styles_common_scss__WEBPACK_IMPORTED_MODULE_4___default.a.table,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 59
     },
     __self: this
   }, __jsx("tbody", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 60
     },
     __self: this
   }, __jsx("tr", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
-    },
-    __self: this
-  }, __jsx("th", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 57
-    },
-    __self: this
-  }, "\uC77C\uC2DC"), __jsx("td", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 58
-    },
-    __self: this
-  }, "2019-02-15 \uC624\uD6C4 2:30")), __jsx("tr", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 60
-    },
-    __self: this
-  }, __jsx("th", {
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 61
     },
     __self: this
-  }, "\uC7A5\uC18C"), __jsx("td", {
+  }, __jsx("th", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 62
     },
     __self: this
-  }, "\uC11C\uC6B8\uD2B9\uBCC4\uC2DC \uAC15\uB0A8\uAD6C \uC5ED\uC0BC\uB3D9 662-14 \uC5D0\uC774\uBE44\uD2F0\uD0C0\uC6CC 2F", " ", __jsx("strong", {
+  }, "\uC77C\uC2DC"), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 63
     },
     __self: this
-  }, "\uCF54\uC2A4\uD1A0\uB9AC \uC2A4\uD398\uC774\uC2A4 \uC138\uBBF8\uB098\uC2E4"))), __jsx("tr", {
+  }, "2019-02-15 \uC624\uD6C4 2:30")), __jsx("tr", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 65
     },
     __self: this
   }, __jsx("th", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 66
     },
     __self: this
-  }, "\uBB38\uC758"), __jsx("td", {
+  }, "\uC7A5\uC18C"), __jsx("td", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 67
+    },
+    __self: this
+  }, "\uC11C\uC6B8\uD2B9\uBCC4\uC2DC \uAC15\uB0A8\uAD6C \uC5ED\uC0BC\uB3D9 662-14 \uC5D0\uC774\uBE44\uD2F0\uD0C0\uC6CC 2F", " ", __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 69
     },
     __self: this
+  }, "\uCF54\uC2A4\uD1A0\uB9AC \uC2A4\uD398\uC774\uC2A4 \uC138\uBBF8\uB098\uC2E4"))), __jsx("tr", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 72
+    },
+    __self: this
+  }, __jsx("th", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 73
+    },
+    __self: this
+  }, "\uBB38\uC758"), __jsx("td", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 74
+    },
+    __self: this
   }, "pgconferencereserve@gmail.com")))))), __jsx(_molecules_centered_mouse__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75
+      lineNumber: 80
     },
     __self: this
   }), __jsx("div", {
     className: classnames__WEBPACK_IMPORTED_MODULE_1___default()(_styles_common_scss__WEBPACK_IMPORTED_MODULE_4___default.a.section, _index_scss__WEBPACK_IMPORTED_MODULE_7___default.a.introduce),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 81
     },
     __self: this
   }, __jsx(_atoms_Diagonal__WEBPACK_IMPORTED_MODULE_5__["default"], {
     className: _index_scss__WEBPACK_IMPORTED_MODULE_7___default.a.introduceDiagonal,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77
+      lineNumber: 82
     },
     __self: this
   }), __jsx("div", {
     className: classnames__WEBPACK_IMPORTED_MODULE_1___default()(_styles_common_scss__WEBPACK_IMPORTED_MODULE_4___default.a.sectionBox, _styles_common_scss__WEBPACK_IMPORTED_MODULE_4___default.a.sectionContent),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78
+      lineNumber: 83
     },
     __self: this
   }, __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79
+      lineNumber: 84
     },
     __self: this
   }, "\u201C\uB204\uAD6C\uB098 \uAC15\uC5F0\uD560 \uC218 \uC788\uACE0 \uB204\uAD6C\uB098 \uD559\uC0DD\uC774 \uB420 \uC218 \uC788\uB2E4\u201D. "), __jsx("hr", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80
+      lineNumber: 85
     },
     __self: this
   }), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81
+      lineNumber: 86
     },
     __self: this
   }, "\uB514\uC2DC\uC778\uC0AC\uC774\uB4DC\uC758 ", __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82
+      lineNumber: 87
     },
     __self: this
   }, "\uAC1C\uBC29\uC131"), "\uC744 \uBAA8\uD1A0\uB85C", __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83
+      lineNumber: 88
     },
     __self: this
   }), " \uD504\uB85C\uADF8\uB798\uBC0D \uAC24\uB7EC\uB9AC \uC720\uC800\uB4E4 \uAC04 ", __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83
+      lineNumber: 88
     },
     __self: this
   }, "\uAE30\uC220\uAD50\uB958"), "\uB97C \uD1B5\uD574", __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84
+      lineNumber: 89
     },
     __self: this
   }), " \uC720\uC800\uB4E4\uC758 ", __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84
+      lineNumber: 89
     },
     __self: this
   }, "\uD504\uB85C\uADF8\uB798\uBC0D \uB2A5\uB825\uC744 \uD5A5\uC0C1"), "\uC2DC\uD0A4\uACE0", " ", __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85
+      lineNumber: 90
     },
     __self: this
   }, "\uB124\uD2B8\uC6CC\uD0B9\uC744 \uD65C\uC131\uD654"), "\uD569\uB2C8\uB2E4."))), __jsx("div", {
     className: classnames__WEBPACK_IMPORTED_MODULE_1___default()(_styles_common_scss__WEBPACK_IMPORTED_MODULE_4___default.a.section, _index_scss__WEBPACK_IMPORTED_MODULE_7___default.a.goals),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89
+      lineNumber: 94
     },
     __self: this
   }, __jsx(_atoms_Diagonal__WEBPACK_IMPORTED_MODULE_5__["default"], {
     className: _index_scss__WEBPACK_IMPORTED_MODULE_7___default.a.goalsDiagonal,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 90
+      lineNumber: 95
     },
     __self: this
   }), __jsx("div", {
     className: classnames__WEBPACK_IMPORTED_MODULE_1___default()(_styles_common_scss__WEBPACK_IMPORTED_MODULE_4___default.a.sectionBox, _styles_common_scss__WEBPACK_IMPORTED_MODULE_4___default.a.sectionContent),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91
+      lineNumber: 96
     },
     __self: this
   }, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 92
+      lineNumber: 97
     },
     __self: this
   }, "OUR GOALS"), __jsx("hr", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 93
+      lineNumber: 98
     },
     __self: this
   }), __jsx("ol", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94
+      lineNumber: 99
     },
     __self: this
   }, __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95
+      lineNumber: 100
     },
     __self: this
   }, __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96
+      lineNumber: 101
     },
     __self: this
   }, __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97
+      lineNumber: 102
     },
     __self: this
   }, "\uB204\uAD6C\uB098 \uAC15\uC5F0"), "\uD558\uACE0 ", __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97
+      lineNumber: 102
     },
     __self: this
   }, "\uB204\uAD6C\uB098 \uCC38\uAD00"), "\uD560 \uC218 \uC788\uB294 \uCEE8\uD37C\uB7F0\uC2A4\uB97C \uD1B5\uD574 \uAD6C\uC131\uC6D0\uB4E4\uC758 \uD504\uB85C\uADF8\uB798\uBC0D", " ", __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 99
+      lineNumber: 104
     },
     __self: this
   }, "\uC9C0\uC2DD \uAD50\uB958\uC758 \uC7A5"), "\uC744 \uB9CC\uB4E6")), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 102
+      lineNumber: 107
     },
     __self: this
   }, __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 103
+      lineNumber: 108
     },
     __self: this
   }, "\uCEE8\uD37C\uB7F0\uC2A4\uB97C \uACC4\uAE30\uB85C \uD504\uB85C\uADF8\uB798\uBC0D \uAC24\uB7EC\uB9AC \uB0B4", " ", __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 105
+      lineNumber: 110
     },
     __self: this
   }, "\uB2E4\uC591\uD55C \uACC4\uCE35\uC758 \uAD50\uB958"), "\uB97C \uD65C\uC131\uD654\uD558\uACE0 \uC774\uB97C \uD1B5\uD574 \uC720\uC800\uB4E4 \uAC04 \uD504\uB85C\uADF8\uB798\uBC0D \uC9C0\uC2DD\uACFC \uAE30\uC220 \uAD50\uB958\uC5D0 \uC774\uBC14\uC9C0")), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109
+      lineNumber: 114
     },
     __self: this
   }, __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110
+      lineNumber: 115
     },
     __self: this
   }, "\uD504\uB85C\uADF8\uB798\uBC0D \uAC24\uB7EC\uB9AC\uC5D0\uC11C\uC758 \uAD50\uB958\uB97C \uD1B5\uD574 \uC591\uC9C8\uC758 \uC815\uBCF4\uAC00 \uC0DD\uC0B0\uB418\uACE0 \uC774\uB97C \uD1B5\uD574 \uC678\uBD80 \uC774\uC6A9\uC790\uB4E4\uC744 \uB04C\uC5B4\uB4E4\uC77C \uC218 \uC788\uB294", " ", __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 113
+      lineNumber: 118
     },
     __self: this
   }, "\uC815\uBCF4\uC0DD\uC0B0\uC131\uC758 \uC99D\uB300")))))), __jsx("div", {
     className: classnames__WEBPACK_IMPORTED_MODULE_1___default()(_styles_common_scss__WEBPACK_IMPORTED_MODULE_4___default.a.section, _index_scss__WEBPACK_IMPORTED_MODULE_7___default.a.about),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 119
+      lineNumber: 124
     },
     __self: this
   }, __jsx(_atoms_Diagonal__WEBPACK_IMPORTED_MODULE_5__["default"], {
     className: _index_scss__WEBPACK_IMPORTED_MODULE_7___default.a.aboutDiagonal,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 120
+      lineNumber: 125
     },
     __self: this
   }), __jsx("div", {
     className: classnames__WEBPACK_IMPORTED_MODULE_1___default()(_styles_common_scss__WEBPACK_IMPORTED_MODULE_4___default.a.sectionBox, _styles_common_scss__WEBPACK_IMPORTED_MODULE_4___default.a.sectionContent),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 121
+      lineNumber: 126
     },
     __self: this
   }, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 122
+      lineNumber: 127
     },
     __self: this
   }, "ABOUT PGC"), __jsx("hr", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 123
+      lineNumber: 128
     },
     __self: this
   }), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 124
+      lineNumber: 129
     },
     __self: this
   }, "\uB514\uC2DC\uC778\uC0AC\uC774\uB4DC \uD504\uB85C\uADF8\uB798\uBC0D \uAC24\uB7EC\uB9AC \uC720\uC800\uB4E4\uACFC \uD568\uAED8", " ", __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 126
+      lineNumber: 131
     },
     __self: this
   }, "\uCCAB \uD504\uB85C\uADF8\uB798\uBC0D \uAC24\uB7EC\uB9AC \uCEE8\uD37C\uB7F0\uC2A4"), "\uB97C \uCD94\uC9C4\uD558\uAC8C \uB418\uC5C8\uC2B5\uB2C8\uB2E4."), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 129
+      lineNumber: 134
     },
     __self: this
   }, "\uB514\uC2DC\uC778\uC0AC\uC774\uB4DC\uB294 \uC5EC\uD0C0 \uCEE4\uBBA4\uB2C8\uD2F0\uC640 \uB2EC\uB9AC", " ", __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 131
+      lineNumber: 136
     },
     __self: this
   }, "\uC608\uC758\uB098 \uCCB4\uBA74\uCE58\uB808\uC5D0\uC11C \uC790\uC720"), "\uB85C\uC6B0\uBA70, \uC774\uB97C \uD1B5\uD574", " ", __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 132
+      lineNumber: 137
     },
     __self: this
   }, "\uB098\uC774\uC640 \uD658\uACBD"), "\uC744 \uB6F0\uC5B4\uB118\uACE0 ", __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 132
+      lineNumber: 137
     },
     __self: this
   }, "\uB2E4\uC591\uD55C \uBC30\uACBD"), "\uC5D0\uC11C \uC720\uB798\uD55C \uD504\uB85C\uADF8\uB798\uBC0D \uC774\uC57C\uAE30\uB97C \uD55C \uACF3\uC5D0\uC11C \uB2F4\uC544\uB0BC \uC218 \uC788\uB294", " ", __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 134
+      lineNumber: 139
     },
     __self: this
   }, "\uC720\uC77C\uBB34\uC774\uD55C \uCEE4\uBBA4\uB2C8\uD2F0"), "\uAC00 \uB418\uC5C8\uC2B5\uB2C8\uB2E4."), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 136
+      lineNumber: 141
     },
     __self: this
   }, "\uC774\uBC88 \uCEE8\uD37C\uB7F0\uC2A4\uB294 \uB514\uC2DC\uC778\uC0AC\uC774\uB4DC\uC758 ", __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 137
+      lineNumber: 142
     },
     __self: this
   }, "\uC790\uC720\uB85C\uC6B4 \uBD84\uC704\uAE30"), "\uB97C \uB2F4\uC544\uB0B4\uC5B4 \u201C\uB204\uAD6C\uB098 \uAC15\uC5F0\uD560 \uC218 \uC788\uACE0, \uB204\uAD6C\uB098 \uC815\uBCF4\uB97C \uC5BB\uC5B4\uAC08 \uC218 \uC788\uB294\u201D \uCEE8\uD37C\uB7F0\uC2A4\uAC00 \uB418\uB294 \uAC83\uC744 \uBAA9\uD45C\uB85C \uD569\uB2C8\uB2E4."), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 141
+      lineNumber: 146
     },
     __self: this
   }, "\uC774\uB97C \uD1B5\uD574 \uB514\uC2DC\uC778\uC0AC\uC774\uB4DC \uD504\uB85C\uADF8\uB798\uBC0D ", __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 142
+      lineNumber: 147
     },
     __self: this
   }, "\uAC24\uB7EC\uB9AC\uC758 \uD65C\uC131\uD654"), "\uC640 \uD568\uAED8 \uB2E4\uC591\uD55C \uD504\uB85C\uADF8\uB798\uBC0D \uC9C0\uC2DD\uACFC \uC815\uBCF4, \uCCA0\uD559\uC744 \uACF5\uC720\uD558\uACE0 \uB098\uB204\uB294 \uC7A5\uC744 \uB9CC\uB4E4\uC5B4 \uAD81\uADF9\uC801\uC73C\uB85C\uB294 ", __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 144
+      lineNumber: 149
     },
     __self: this
   }, "\uCEE4\uBBA4\uB2C8\uD2F0\uC758 \uC0DD\uC0B0\uC131"), "\uC744 \uB192\uC774\uB294 \uB370 \uADF8 \uBAA9\uC801\uC774 \uC788\uC2B5\uB2C8\uB2E4."), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 147
+      lineNumber: 152
     },
     __self: this
   }, "\uCEE4\uBBA4\uB2C8\uD2F0 \uD398\uC774\uC9C0\uC758 ", __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 148
+      lineNumber: 153
     },
     __self: this
   }, "\uB192\uC740 \uC0DD\uC0B0\uC131"), "\uC740 \uADF8 \uD558\uB098\uB9CC\uC73C\uB85C\uB3C4 \uB2E4\uC591\uD55C \uC778\uD130\uB137 \uC774\uC6A9\uC790\uB4E4\uC758 \uBC1C\uAC78\uC74C\uC744 \uB04C\uC5B4\uB2F9\uAE41\uB2C8\uB2E4. \uC774\uBC88 \uCEE8\uD37C\uB7F0\uC2A4\uB97C \uACC4\uAE30\uB85C \uD504\uB85C\uADF8\uB798\uBC0D \uAC24\uB7EC\uB9AC\uAC00 \uC790\uC720\uB86D\uAC8C ", __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 150
+      lineNumber: 155
     },
     __self: this
   }, "\uC591\uC9C8\uC758 \uC815\uBCF4"), "\uB97C \uB098\uB20C \uC218 \uC788\uB294 \uC7A5\uC774 \uB41C\uB2E4\uBA74 \uB514\uC2DC\uC778\uC0AC\uC774\uB4DC\uC5D0\uB3C4 \uB3C4\uC6C0\uC774 \uB418\uC9C0 \uC54A\uC744\uAE4C \uAE30\uB300\uD558\uACE0 \uC788\uC2B5\uB2C8\uB2E4."))));
@@ -9926,14 +9927,14 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 /***/ }),
 
-/***/ 14:
-/*!********************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5Cblueprvt%5Cdesktop%5Cpgconference.github.io%5Csrc%5Cpages%5Cindex.js ***!
-  \********************************************************************************************************************************************/
+/***/ 4:
+/*!**************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CWORKTOGETHER%5Cyee%5Cyho%5Cpgconference.github.io%5Csrc%5Cpages%5Cindex.js ***!
+  \**************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5Cblueprvt%5Cdesktop%5Cpgconference.github.io%5Csrc%5Cpages%5Cindex.js! */"../node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5Cblueprvt%5Cdesktop%5Cpgconference.github.io%5Csrc%5Cpages%5Cindex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CWORKTOGETHER%5Cyee%5Cyho%5Cpgconference.github.io%5Csrc%5Cpages%5Cindex.js! */"../node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CWORKTOGETHER%5Cyee%5Cyho%5Cpgconference.github.io%5Csrc%5Cpages%5Cindex.js!./");
 
 
 /***/ }),
@@ -9949,5 +9950,5 @@ module.exports = dll_8efde919c998cf0da464;
 
 /***/ })
 
-},[[14,"static/runtime/webpack.js","styles"]]]);
+},[[4,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map

@@ -8747,10 +8747,10 @@ if (true) {
 
 /***/ }),
 
-/***/ "../node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fprogram&absolutePagePath=C%3A%5Cblueprvt%5Cdesktop%5Cpgconference.github.io%5Csrc%5Cpages%5Cprogram.js!./":
-/*!**************************************************************************************************************************************************************************************************!*\
-  !*** ../node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fprogram&absolutePagePath=C%3A%5Cblueprvt%5Cdesktop%5Cpgconference.github.io%5Csrc%5Cpages%5Cprogram.js ***!
-  \**************************************************************************************************************************************************************************************************/
+/***/ "../node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fprogram&absolutePagePath=C%3A%5CWORKTOGETHER%5Cyee%5Cyho%5Cpgconference.github.io%5Csrc%5Cpages%5Cprogram.js!./":
+/*!********************************************************************************************************************************************************************************************************!*\
+  !*** ../node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fprogram&absolutePagePath=C%3A%5CWORKTOGETHER%5Cyee%5Cyho%5Cpgconference.github.io%5Csrc%5Cpages%5Cprogram.js ***!
+  \********************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11284,7 +11284,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _diagonal_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_diagonal_scss__WEBPACK_IMPORTED_MODULE_5__);
 
 
-var _jsxFileName = "C:\\blueprvt\\desktop\\pgconference.github.io\\src\\atoms\\Diagonal.js";
+var _jsxFileName = "C:\\WORKTOGETHER\\yee\\yho\\pgconference.github.io\\src\\atoms\\Diagonal.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 
@@ -11351,7 +11351,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _diagonal_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_diagonal_scss__WEBPACK_IMPORTED_MODULE_5__);
 
 
-var _jsxFileName = "C:\\blueprvt\\desktop\\pgconference.github.io\\src\\atoms\\diagonal.js";
+var _jsxFileName = "C:\\WORKTOGETHER\\yee\\yho\\pgconference.github.io\\src\\atoms\\diagonal.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 
@@ -11412,7 +11412,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! framer-motion */ "../node_modules/framer-motion/dist/framer-motion.es.js");
 /* harmony import */ var _mouse_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./mouse.scss */ "./atoms/mouse.scss");
 /* harmony import */ var _mouse_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_mouse_scss__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "C:\\blueprvt\\desktop\\pgconference.github.io\\src\\atoms\\mouse.js";
+var _jsxFileName = "C:\\WORKTOGETHER\\yee\\yho\\pgconference.github.io\\src\\atoms\\mouse.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -11474,7 +11474,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _spacer_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./spacer.scss */ "./atoms/spacer.scss");
 /* harmony import */ var _spacer_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_spacer_scss__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\blueprvt\\desktop\\pgconference.github.io\\src\\atoms\\spacer.js";
+var _jsxFileName = "C:\\WORKTOGETHER\\yee\\yho\\pgconference.github.io\\src\\atoms\\spacer.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -11495,10 +11495,10 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 /*!***************************!*\
   !*** ./data/program.json ***!
   \***************************/
-/*! exports provided: 0, 1, 2, default */
+/*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, 8, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("[{\"title\":\"프로그램 예시 1\",\"author\":\"PGLR1\",\"description\":\"프로그램 설명 예시입니다. 이곳에 자세한 설명이 들어갈 것입니다. 프로그램 설명 예시입니다. 이곳에 자세한 설명이 들어갈 것입니다. 프로그램 설명 예시입니다. 이곳에 자세한 설명이 들어갈 것입니다. \"},{\"title\":\"프로그램 예시 2\",\"author\":\"PGLR1\",\"description\":\"프로그램 설명 예시입니다. 이곳에 자세한 설명이 들어갈 것입니다. 프로그램 설명 예시입니다. 이곳에 자세한 설명이 들어갈 것입니다. 프로그램 설명 예시입니다. 이곳에 자세한 설명이 들어갈 것입니다. \"},{\"title\":\"프로그램 예시 3\",\"author\":\"PGLR1\",\"description\":\"프로그램 설명 예시입니다. 이곳에 자세한 설명이 들어갈 것입니다. 프로그램 설명 예시입니다. 이곳에 자세한 설명이 들어갈 것입니다. 프로그램 설명 예시입니다. 이곳에 자세한 설명이 들어갈 것입니다. \"}]");
+module.exports = JSON.parse("[{\"title\":\"테스트코드를 클린코드로 리팩토링하기 위해 테스트코드의 테스트코드도 클린코드로 짜다가 이력서를 다시 쓰게 된 경위서\",\"author\":\"Java\",\"description\":\"신입 Test Engineer인 Java가 클린코드 가이드라인을 통해 망가진 코드를 리팩토링하는 과정과 이를 통해 우리가 중소기업에 가면 안되는 이유에 대해 알아봅시다.\"},{\"title\":\"R로 만드는 웹 애플리케이션\",\"author\":\"조선니체\",\"description\":\"R과 shiny로 맞춤형 의학통계 웹을 제공한 경험을 공유합니다. 자주 쓰는 분석은 R패키지로 만들어 CRAN에 배포하였습니다.\"},{\"title\":\"웹에서 게임 개발자까지\",\"author\":\"소년코딩\",\"description\":\"웹 개발, 게임 개발 등 다양한 성장과정을 거친 한 초보 프로그래머의 5년간 기록을 통해 이렇게 살면 안된다를 배운다.\"},{\"title\":\"유지보수 어렵게 하는 방법 (JS)\",\"author\":\"CreeJee\",\"description\":\"흔하지않은 JS 안티패턴, 이 멋진 언어를 하는 모두에게 능지상승을!\"},{\"title\":\"개발 생산성과 시각화\",\"author\":\"착과\",\"description\":\"우리는 생산성을 높이기 위해 온갖 방법을 사용합니다. IDE를 사용하고, 플러그인을 설치하고, 모니터나 키보드를 바꾸기도 하죠. 그러나 여전히 복잡한 소스코드가 가진 의미를 한눈에 파악하긴 쉽지 않습니다. 이를 한 눈에 파악하든 말든 하는 방법이 있을까요?\"},{\"title\":\"GraphQL을 왜 써야할까?\",\"author\":\"에반유\",\"description\":\"GraphQL, 이렇게 주목받는 이유는 무엇일까요? GraphQL이 당신의 코드에 줄 수 있는 이점을 알아봅니다. 또한 일반적인 첫인상과 오해를 풀고, 그 무한한 활용성을 알아봅시다.\"},{\"title\":\"학부를 졸업하며 아쉬운 것들\",\"author\":\"슈개\",\"description\":\"아직 졸업을 안한 1~3학년 중 '학부를 졸업하면서 뭘 해야 후회를 안하고 이번에 졸업하는 사람은 무슨 생각을 가지고 있을지 궁금하다' 라는 생각을 누군가는 가지고 있을 것 같다. 사람마다 생각은 다 다르겠지만 내가 이번에 졸업하며 아쉬워하는 내용을 공유하고 생각을 나누려고 한다.\"},{\"title\":\"TGrid: 새 시대의 그리드 컴퓨팅\",\"author\":\"삼촌\",\"description\":\" - \"},{\"title\":\"간단하게 유사 트위치 만들어보기\",\"author\":\"OpenID검색\",\"description\":\" - \"}]");
 
 /***/ }),
 
@@ -11516,7 +11516,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _centered_mouse_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./centered-mouse.scss */ "./molecules/centered-mouse.scss");
 /* harmony import */ var _centered_mouse_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_centered_mouse_scss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _atoms_mouse__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/atoms/mouse */ "./atoms/mouse.js");
-var _jsxFileName = "C:\\blueprvt\\desktop\\pgconference.github.io\\src\\molecules\\centered-mouse.js";
+var _jsxFileName = "C:\\WORKTOGETHER\\yee\\yho\\pgconference.github.io\\src\\molecules\\centered-mouse.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -11571,7 +11571,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _jumbotron_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_jumbotron_scss__WEBPACK_IMPORTED_MODULE_7__);
 
 
-var _jsxFileName = "C:\\blueprvt\\desktop\\pgconference.github.io\\src\\molecules\\jumbotron.js";
+var _jsxFileName = "C:\\WORKTOGETHER\\yee\\yho\\pgconference.github.io\\src\\molecules\\jumbotron.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 
@@ -11707,7 +11707,7 @@ var _data_program_json__WEBPACK_IMPORTED_MODULE_11___namespace = /*#__PURE__*/__
 
 
 
-var _jsxFileName = "C:\\blueprvt\\desktop\\pgconference.github.io\\src\\pages\\program.js";
+var _jsxFileName = "C:\\WORKTOGETHER\\yee\\yho\\pgconference.github.io\\src\\pages\\program.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement;
 
 
@@ -11796,7 +11796,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement;
         lineNumber: 37
       },
       __self: this
-    }, "\uAC15\uC0AC : ", __jsx("strong", {
+    }, "SPEAKER\u3000", __jsx("strong", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 38
@@ -11820,14 +11820,14 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement;
 
 /***/ }),
 
-/***/ 4:
-/*!*****************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fprogram&absolutePagePath=C%3A%5Cblueprvt%5Cdesktop%5Cpgconference.github.io%5Csrc%5Cpages%5Cprogram.js ***!
-  \*****************************************************************************************************************************************************/
+/***/ 11:
+/*!***********************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fprogram&absolutePagePath=C%3A%5CWORKTOGETHER%5Cyee%5Cyho%5Cpgconference.github.io%5Csrc%5Cpages%5Cprogram.js ***!
+  \***********************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fprogram&absolutePagePath=C%3A%5Cblueprvt%5Cdesktop%5Cpgconference.github.io%5Csrc%5Cpages%5Cprogram.js! */"../node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fprogram&absolutePagePath=C%3A%5Cblueprvt%5Cdesktop%5Cpgconference.github.io%5Csrc%5Cpages%5Cprogram.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fprogram&absolutePagePath=C%3A%5CWORKTOGETHER%5Cyee%5Cyho%5Cpgconference.github.io%5Csrc%5Cpages%5Cprogram.js! */"../node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fprogram&absolutePagePath=C%3A%5CWORKTOGETHER%5Cyee%5Cyho%5Cpgconference.github.io%5Csrc%5Cpages%5Cprogram.js!./");
 
 
 /***/ }),
@@ -11843,5 +11843,5 @@ module.exports = dll_8efde919c998cf0da464;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js","styles"]]]);
+},[[11,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=program.js.map

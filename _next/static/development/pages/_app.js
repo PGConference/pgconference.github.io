@@ -19547,7 +19547,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _diagonal_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_diagonal_scss__WEBPACK_IMPORTED_MODULE_5__);
 
 
-var _jsxFileName = "C:\\blueprvt\\desktop\\pgconference.github.io\\src\\atoms\\diagonal.js";
+var _jsxFileName = "C:\\WORKTOGETHER\\yee\\yho\\pgconference.github.io\\src\\atoms\\diagonal.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 
@@ -19609,7 +19609,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/router */ "../node_modules/next/dist/client/router.js");
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "C:\\blueprvt\\desktop\\pgconference.github.io\\src\\atoms\\nav-link.js";
+var _jsxFileName = "C:\\WORKTOGETHER\\yee\\yho\\pgconference.github.io\\src\\atoms\\nav-link.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -19662,7 +19662,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./_app.scss */ "./pages/_app.scss");
 /* harmony import */ var _app_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_app_scss__WEBPACK_IMPORTED_MODULE_7__);
 
-var _jsxFileName = "C:\\blueprvt\\desktop\\pgconference.github.io\\src\\pages\\_app.js";
+var _jsxFileName = "C:\\WORKTOGETHER\\yee\\yho\\pgconference.github.io\\src\\pages\\_app.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 

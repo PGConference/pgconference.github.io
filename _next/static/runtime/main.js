@@ -10673,7 +10673,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      (0, _sourceMapSupport.rewriteStacktrace)(error, "C:\\blueprvt\\desktop\\pgconference.github.io\\dist");
+      (0, _sourceMapSupport.rewriteStacktrace)(error, "C:\\WORKTOGETHER\\yee\\yho\\pgconference.github.io\\dist");
       return error;
     }
   };
