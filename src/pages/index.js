@@ -89,6 +89,19 @@ export default () => {
             <br /> 유저들의 <strong>프로그래밍 능력을 향상</strong>시키고{" "}
             <strong>네트워킹을 활성화</strong>합니다.
           </p>
+          <hr />
+          <p>
+            <span className={styles.introduceSponsorTitle}>
+              SPONSORED BY{" "}
+              <a href="https://dcinside.com" target="_blank">
+                <strong>DCINSIDE</strong>
+              </a>
+            </span>
+            <img
+              className={styles.introduceDcLogo}
+              src={require("@/assets/images/dc-logo.png")}
+            />
+          </p>
         </div>
       </div>
       <div className={cx(commonCss.section, styles.goals)}>

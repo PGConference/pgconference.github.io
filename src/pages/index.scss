@@ -65,6 +65,18 @@
 .introduceDiagonal {
   background-color: $color-light;
 }
+.introduceSponsorTitle {
+  display: block;
+  font-weight: 700;
+  font-family: $display-font-family;
+  color: #555;
+}
+.introduceDcLogo {
+  margin-top: 1em;
+  border-radius: 0.3em;
+  overflow: hidden;
+  width: 5em;
+}
 .goals {
   color: $color-light;
   text-align: justify;
@@ -95,6 +107,7 @@
   color: #eee;
   border: 0;
   padding: 0.875em 3em;
+  margin: 0.5em 0;
   font-size: 1.2em;
   font-weight: 700;
   box-shadow: 0 0.5em 1em -0.33em $color-darkblue;

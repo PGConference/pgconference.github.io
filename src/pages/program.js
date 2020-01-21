@@ -1,8 +1,9 @@
 import React, { createContext } from "react";
 import cx from "classnames";
+import { mdiGithubCircle, mdiHomeCircle } from "@mdi/js";
 
 import commonCss from "@/styles/common.scss";
-import Spacer from "@/atoms/spacer";
+import Icon from "@/atoms/Icon";
 import Diagonal from "@/atoms/Diagonal";
 import Jumbotron from "@/molecules/jumbotron";
 import CenteredMouse from "@/molecules/centered-mouse";
@@ -29,16 +30,39 @@ export default () => {
       <CenteredMouse />
       <div className={cx(commonCss.section, styles.items)}>
         <div className={cx(commonCss.sectionBox, styles.itemsBox)}>
-          {programList.map((programItem, i) => (
+          {programList.map((item, i) => (
             <div key={i} className={cx(styles.item)}>
               <Diagonal className={cx(styles.itemDiagonal)} />
               <div className={cx(styles.itemContent)}>
-                <h1>{programItem.title}</h1>
+                <span className={styles.itemNumber}>#{i + 1}</span>
+                <h1>{item.title}</h1>
                 <h2>
-                  SPEAKER　<strong>{programItem.author}</strong>
+                  SPEAKER　<strong>{item.author}</strong>
                 </h2>
+                {(item.github || item.home) && (
+                  <p>
+                    {item.github && (
+                      <a
+                        className={cx(styles.linkButton, styles.githubButton)}
+                        href={item.github}
+                        target="_blank"
+                      >
+                        <Icon path={mdiGithubCircle} /> <strong>GITHUB</strong>
+                      </a>
+                    )}
+                    {item.home && (
+                      <a
+                        className={cx(styles.linkButton, styles.homeButton)}
+                        href={item.home}
+                        target="_blank"
+                      >
+                        <Icon path={mdiHomeCircle} /> <strong>HOMEPAGE</strong>
+                      </a>
+                    )}
+                  </p>
+                )}
                 <hr />
-                <p>{programItem.description}</p>
+                <p>{item.description}</p>
               </div>
             </div>
           ))}

@@ -5,4 +5,10 @@
 - [x] Google Analytics & Google Tag Manager
 - [x] Google Map API
 - [x] 상세 주소 정보 추가
-- [ ] 메인에 참여 버튼 추가 ( 링크 걸어야 함 )
+- [x] 메인에 참여 버튼 추가 ( 링크 걸어야 함 )
+- [x] 2019-2020으로 변X
+- [x] 메인참여버튼 여백 조절
+- [x] 스폰서 디시 로고 추가
+- [x] h1 text align
+- [x] Program: github icon, homepage icon
+- [x] Program: Add number

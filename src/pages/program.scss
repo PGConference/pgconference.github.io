@@ -10,15 +10,27 @@
 .itemsBox {
   padding: 6rem 2rem;
 }
+.itemNumber {
+  display: inline-block;
+  padding: 0 1em;
+  border-radius: 1em;
+  font-weight: 700;
+  font-size: 2em;
+
+  font-family: $display-font-family;
+  background-color: $color-dark;
+  color: $color-light;
+  box-shadow: 0 0.3em 0.6em -0.2em rgba($color-dark, 0.66);
+}
 .item {
   position: relative;
-  text-align: justify;
 
   transition: color 0.15s ease;
   color: $color-light;
 
   h1 {
     font-family: $display-font-family;
+    line-height: 1.2;
   }
   h2 {
     font-weight: 400;
@@ -32,6 +44,7 @@
   }
   p {
     opacity: 0.75;
+    text-align: justify;
   }
   hr {
     display: inline-block;
@@ -62,4 +75,31 @@
 }
 .item + .item {
   margin-top: 1rem;
+}
+.linkButton {
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 0.2em;
+  margin-bottom: 0.2em;
+  padding: 0.5em 1em;
+  border-radius: 0.2em;
+  box-shadow: 0 0.3em 0.6em -0.2em rgba(black, 0.33);
+
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+.githubButton {
+  $color: saturate($color-darkblue, 10%);
+  background-color: $color;
+
+  &:hover {
+    background-color: lighten($color, 10%);
+  }
+}
+.homeButton {
+  $color: saturate(adjust-hue($color-darkblue, -60), 5%);
+  background-color: $color;
+
+  &:hover {
+    background-color: lighten($color, 10%);
+  }
 }
