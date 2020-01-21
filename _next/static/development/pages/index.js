@@ -9571,7 +9571,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
       lineNumber: 63
     },
     __self: this
-  }, "2019-02-15 \uC624\uD6C4 2:30")), __jsx("tr", {
+  }, "2020-02-15 \uC624\uD6C4 1:00")), __jsx("tr", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 65
