@@ -9,14 +9,14 @@
   {
     "title": "R로 만드는 웹 애플리케이션",
     "author": "조선니체",
-    "github": "",
+    "github": "https://github.com/jinseob2kim",
     "home": "https://zarathu.com",
     "description": "R과 shiny로 맞춤형 의학통계 웹을 제공한 경험을 공유합니다. 자주 쓰는 분석은 R패키지로 만들어 CRAN에 배포하였습니다."
   },
   {
     "title": "웹에서 게임 개발자까지",
     "author": "소년코딩",
-    "github": "https://github.com/jinseob2kim",
+    "github": "",
     "home": "https://boycoding.tistory.com",
     "description": "웹 개발, 게임 개발 등 다양한 성장과정을 거친 한 초보 프로그래머의 5년간 기록을 통해 이렇게 살면 안된다를 배운다."
   },
