@@ -59,7 +59,7 @@ export default () => {
             <tbody>
               <tr>
                 <th>일시</th>
-                <td>2019-02-15 오후 1:00</td>
+                <td>2020-02-15 오후 1:00</td>
               </tr>
               <tr>
                 <th>장소</th>
